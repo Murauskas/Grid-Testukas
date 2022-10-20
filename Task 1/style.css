@@ -18,16 +18,24 @@ body {
 }
 
 header {
-    background-color: green;
     grid-area: header;
 }
 
 main {
-    background-color: aqua;
     grid-area: main;
 }
 
 footer {
-    background-color: blue;
     grid-area: footer;
+}
+
+header,
+main,
+footer {
+    border: 5px solid red;
+    border-radius: 5px;
+}
+
+span {
+    padding: 10px;
 }
