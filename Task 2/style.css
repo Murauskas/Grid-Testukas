@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+.layout {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 400px;
+    gap: 20px;
+}
+
+.box {
+    content: '';
+    border: 5px solid red;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.box__one {
+    grid-column: span 4 / 6;
+}
+
+.box__two {
+    grid-column: span 6 / 12;
+}
